@@ -1,18 +1,22 @@
-.reviews{
+.reviews {
     padding-top: 20px;
-    .reviews-content{
+
+    .reviews-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .title{
+
+        .title {
             font-weight: 400;
             font-size: 36px;
             line-height: 100px;
         }
-        .line{
+
+        .line {
             position: relative;
             width: 665px;
-            &::after{
+
+            &::after {
                 position: absolute;
                 content: "";
                 width: 100%;
@@ -20,7 +24,8 @@
                 background-color: #DCD9D0;
             }
         }
-        button{
+
+        button {
             background-color: #9A231A;
             border: none;
             color: #ffff;
@@ -30,15 +35,274 @@
             font-weight: 400;
             line-height: 24.59px;
         }
+
+        @media (max-width:768px) {
+            .title {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            .line {
+                display: none;
+            }
+
+            button {
+                width: 152px;
+            }
+        }
     }
-    .rayting-reviews{
+
+    .rating-reviews {
         border: 1px solid #B7A259;
         background-color: #E2D7BC0D;
-        padding: 20px;
+        padding: 38px;
         box-shadow: 0px 4px 8px 0px #00000026;
         border-radius: 10px;
-        .rayting-stars{
-            
+        margin-top: 20px;
+
+        .rating-stars {
+            text-align: center;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 800;
+                line-height: 20px;
+                display: none;
+            }
+
+            .list-style {
+                p {
+                    font-size: 36px;
+                    line-height: 40px;
+                    font-weight: 800;
+                    color: #3F4042;
+                    margin-bottom: 10px;
+                }
+
+                ul {
+                    padding-left: 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+
+                    li {
+                        color: #FCE79D;
+                        font-size: 14px;
+
+                    }
+                }
+
+                .rating-num {
+                    display: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19.12px;
+                }
+            }
+
+            a {
+                color: #3F4042;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 16px;
+
+            }
+        }
+
+        .rating-line {
+            .title {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 16px;
+                    color: #3F4042;
+                }
+            }
+
+            .line {
+                border: 0.5px solid #B7A259;
+                display: block;
+                margin: 10px 0;
+                padding: 2px 0;
+                border-radius: 10px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: #B7A259;
+                    border-radius: 10px 0 0 10px;
+                    width: 80%;
+                    padding: 2px 0;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        @media (max-width:768px) {
+            .rating-stars {
+                display: flex;
+                justify-content: space-between;
+
+                h3 {
+                    display: block;
+                }
+
+                .list-style {
+                    p {
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 7px;
+                        }
+                    }
+
+                    .rayting-num {
+                        display: block;
+                    }
+                }
+
+                a {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+// Repairing and Servicing
+.repairing_and_servicing {
+    padding-top: 50px;
+    .repairing {
+        border: 1px solid #B7A259;
+        box-shadow: 0px 4px 8px 0px #00000026;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .title {
+            border-bottom: 1px solid #B7A259;
+            background: #B7A25933;
+            padding: 16px;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 40px;
+            }
+        }
+
+        .content {
+            padding: 30px;
+            .rating {
+                text-align: center;
+                border: 1px solid #E2D7BC99;
+                background-color: #E2D7BC0D;
+                padding: 4px 25px;
+
+                .list-style {
+                    p {
+                        font-size: 36px;
+                        line-height: 40px;
+                        font-weight: 800;
+                        color: #3F4042;
+                        margin-bottom: 10px;
+                    }
+
+                    ul {
+                        padding-left: 0;
+                        display: flex;
+                        justify-content: center;
+                        gap: 5px;
+
+                        li {
+                            color: #FCE79D;
+                            font-size: 14px;
+
+                        }
+                    }
+                }
+                .rating-line{
+                    margin-top: 30px;
+                    .list{
+                    border-top: 1px solid #B7A259;
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        padding: 15px 5px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16px;
+                    }
+                }
+                }
+            }
+            .text{
+                .title-text{
+                    h3{
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 400;
+                    }
+                }
+                .content-text{
+                    margin-top: 20px;
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .user{
+                .img{
+                    width: 45px;
+                    height: 45px;
+                    background-color: #D9D9D9;
+                    border-radius: 50%;
+                    margin-top: 20px;
+                }
+                .free{
+                    margin-top: 20px;
+                    p{
+                        font-size: 18px;
+                        line-height: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .button-read{
+                margin-top: 30px;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24.59px;
+                    background: #9A231A;
+                    padding: 13px 26px;
+                }
+            }
+        }
+    }
+    .spiwer{
+        text-align: center;
+        margin-top: 50px;
+        .seeall{
+            a{
+                color: #3F4042;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 16px;
+            }
         }
     }
 }

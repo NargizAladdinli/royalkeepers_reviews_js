@@ -32,13 +32,226 @@
   font-weight: 400;
   line-height: 24.59px;
 }
-.reviews .rayting-reviews {
+@media (max-width: 768px) {
+  .reviews .reviews-content .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .reviews .reviews-content .line {
+    display: none;
+  }
+  .reviews .reviews-content button {
+    width: 152px;
+  }
+}
+.reviews .rating-reviews {
   border: 1px solid #B7A259;
   background-color: rgba(226, 215, 188, 0.0509803922);
-  padding: 20px;
+  padding: 38px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 10px;
+  margin-top: 20px;
 }
+.reviews .rating-reviews .rating-stars {
+  text-align: center;
+}
+.reviews .rating-reviews .rating-stars h3 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  display: none;
+}
+.reviews .rating-reviews .rating-stars .list-style p {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #3F4042;
+  margin-bottom: 10px;
+}
+.reviews .rating-reviews .rating-stars .list-style ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.reviews .rating-reviews .rating-stars .list-style ul li {
+  color: #FCE79D;
+  font-size: 14px;
+}
+.reviews .rating-reviews .rating-stars .list-style .rating-num {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+}
+.reviews .rating-reviews .rating-stars a {
+  color: #3F4042;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.reviews .rating-reviews .rating-line .title {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews .rating-reviews .rating-line .title span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #3F4042;
+}
+.reviews .rating-reviews .rating-line .line {
+  border: 0.5px solid #B7A259;
+  display: block;
+  margin: 10px 0;
+  padding: 2px 0;
+  border-radius: 10px;
+  position: relative;
+}
+.reviews .rating-reviews .rating-line .line::before {
+  content: "";
+  position: absolute;
+  background-color: #B7A259;
+  border-radius: 10px 0 0 10px;
+  width: 80%;
+  padding: 2px 0;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .reviews .rating-reviews .rating-stars {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reviews .rating-reviews .rating-stars h3 {
+    display: block;
+  }
+  .reviews .rating-reviews .rating-stars .list-style p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .reviews .rating-reviews .rating-stars .list-style ul li {
+    font-size: 7px;
+  }
+  .reviews .rating-reviews .rating-stars .list-style .rayting-num {
+    display: block;
+  }
+  .reviews .rating-reviews .rating-stars a {
+    display: none;
+  }
+}
+
+.repairing_and_servicing {
+  padding-top: 50px;
+}
+.repairing_and_servicing .repairing {
+  border: 1px solid #B7A259;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.repairing_and_servicing .repairing .title {
+  border-bottom: 1px solid #B7A259;
+  background: rgba(183, 162, 89, 0.2);
+  padding: 16px;
+}
+.repairing_and_servicing .repairing .title h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.repairing_and_servicing .repairing .content {
+  padding: 30px;
+}
+.repairing_and_servicing .repairing .content .rating {
+  text-align: center;
+  border: 1px solid rgba(226, 215, 188, 0.6);
+  background-color: rgba(226, 215, 188, 0.0509803922);
+  padding: 4px 25px;
+}
+.repairing_and_servicing .repairing .content .rating .list-style p {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #3F4042;
+  margin-bottom: 10px;
+}
+.repairing_and_servicing .repairing .content .rating .list-style ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.repairing_and_servicing .repairing .content .rating .list-style ul li {
+  color: #FCE79D;
+  font-size: 14px;
+}
+.repairing_and_servicing .repairing .content .rating .rating-line {
+  margin-top: 30px;
+}
+.repairing_and_servicing .repairing .content .rating .rating-line .list {
+  border-top: 1px solid #B7A259;
+  display: flex;
+  justify-content: space-between;
+}
+.repairing_and_servicing .repairing .content .rating .rating-line .list span {
+  padding: 15px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.repairing_and_servicing .repairing .content .text .title-text h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.repairing_and_servicing .repairing .content .text .content-text {
+  margin-top: 20px;
+}
+.repairing_and_servicing .repairing .content .text .content-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.repairing_and_servicing .repairing .content .user .img {
+  width: 45px;
+  height: 45px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.repairing_and_servicing .repairing .content .user .free {
+  margin-top: 20px;
+}
+.repairing_and_servicing .repairing .content .user .free p {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.repairing_and_servicing .repairing .content .button-read {
+  margin-top: 30px;
+  text-align: center;
+}
+.repairing_and_servicing .repairing .content .button-read a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+  background: #9A231A;
+  padding: 13px 26px;
+}
+.repairing_and_servicing .spiwer {
+  text-align: center;
+  margin-top: 50px;
+}
+.repairing_and_servicing .spiwer .seeall a {
+  color: #3F4042;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +261,7 @@
 body {
   background-color: #fcfaf6 !important;
   font-size: 18px;
+  color: #3F4042 !important;
 }
 
 .container {
