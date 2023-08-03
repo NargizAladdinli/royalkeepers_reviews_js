@@ -10,6 +10,7 @@
             font-weight: 400;
             font-size: 36px;
             line-height: 100px;
+            font-family: Chronicle !important;
         }
 
         .line {
@@ -191,6 +192,7 @@
             border-bottom: 1px solid #B7A259;
             background: #B7A25933;
             padding: 16px;
+            font-family: Chronicle;
 
             h2 {
                 font-size: 36px;
@@ -250,6 +252,7 @@
                         font-size: 18px;
                         line-height: 20px;
                         font-weight: 400;
+                        font-family: Chronicle;
                     }
                 }
                 .content-text{
@@ -281,7 +284,7 @@
             .button-read{
                 margin-top: 30px;
                 text-align: center;
-                a{
+                .click{
                     text-decoration: none;
                     color: #fff;
                     font-size: 18px;
@@ -289,6 +292,134 @@
                     line-height: 24.59px;
                     background: #9A231A;
                     padding: 13px 26px;
+                }
+                .open{
+                    border: 1px solid #9A231A;
+                    padding: 13px 26px;
+                    line-height: 24.59px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #9A231A;
+                    text-decoration: none;
+                    background-color: inherit;
+                    &::after{
+                        content: '\f106';
+                        font-family: "Font Awesome 6 Free";
+                    }
+                }
+            }
+        }
+        .accordion-down{
+            border-top: 1px solid #B7A259;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            .accordion_bar{
+                padding: 10px 20px;
+                .accordion_scroll{
+                    height: 100vh;
+                    overflow: auto;
+                    padding: 0px 30px;
+                    .scroll-txt{
+                        &:last-of-type.scroll-txt{
+                            border-bottom: none;
+                        }
+                        padding: 15px 0;
+                        border-bottom: 1px solid #B7A259;
+                        .scroll-title{
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 35.42px;
+                            font-family: Chronicle;
+                        }
+                        .scroll-info{
+                            margin-top: 20px;
+                            p{
+                                margin-bottom: 10px;
+                                font-family: Chronicle;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 26.57px;
+                            }
+                            span{
+                                font-size: 18px;
+                                line-height: 20px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+            .static-accordion{
+                background: #B7A25933;
+                padding: 33px 50px;
+                .static_title{
+                    height: 400;
+                    font-size: 24px;
+                    line-height: 20px;
+                }
+                .static_content{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .up{
+            border-top: 1px solid #B7A259;
+            transition: all 0.3s ease-in-out;
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            .accordion_bar{
+                padding: 10px 20px;
+                .accordion_scroll{
+                    height: 100vh;
+                    overflow: auto;
+                    padding: 0px 30px;
+                    .scroll-txt{
+                        &:last-of-type.scroll-txt{
+                            border-bottom: none;
+                        }
+                        padding: 15px 0;
+                        border-bottom: 1px solid #B7A259;
+                        .scroll-title{
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 35.42px;
+                            font-family: Chronicle;
+                        }
+                        .scroll-info{
+                            margin-top: 20px;
+                            p{
+                                margin-bottom: 10px;
+                                font-family: Chronicle;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 26.57px;
+                            }
+                            span{
+                                font-size: 18px;
+                                line-height: 20px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+            .static-accordion{
+                background: #B7A25933;
+                padding: 33px 50px;
+                .static_title{
+                    height: 400;
+                    font-size: 24px;
+                    line-height: 20px;
+                }
+                .static_content{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
                 }
             }
         }

@@ -1,6 +1,5 @@
 @import "pages/home";
 
-
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +10,8 @@ body{
     background-color: #fcfaf6 !important;
     font-size: 18px;
     color: #3F4042 !important;
+    font-family: Avenir, sans-serif !important;
+    
 }
 .container{
     max-width: 1140px !important;
@@ -19,4 +20,13 @@ ul{
     margin: 0;
     padding: 0;
     list-style: none;
+}
+@font-face {
+    font-family: Avenir, sans-serif;
+    src: local('Avenir'),
+    url("../fonts/Avenir-Book/Avenir-Book.woff");
+}
+@font-face {
+    font-family: Chronicle;
+    src: url("../fonts/ChronicleDisplay-Black/ChronicleDisplay-Black.woff");
 }
