@@ -1,9 +1,11 @@
 @import "pages/home";
+@import "pages/quetions";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body{
@@ -12,9 +14,6 @@ body{
     color: #3F4042 !important;
     font-family: Avenir, sans-serif !important;
     
-}
-.container{
-    max-width: 1140px !important;
 }
 ul{
     margin: 0;
