@@ -1,5 +1,6 @@
 @import "pages/home";
 @import "pages/quetions";
+@import "pages/rating";
 
 *{
     margin: 0;
@@ -15,11 +16,56 @@ body{
     font-family: Avenir, sans-serif !important;
     
 }
+.container{
+    max-width: 1140px !important;
+}
 ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
+
+.swiper {
+    width: 100%;
+    // height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+  }
+
+  .swiper-button-next{
+    width: 38px !important;
+    height: 38px !important;
+    background-color: #9A231A;
+    box-shadow: 6px 5px 5px 0px #00000045;
+    border-radius: 50%;
+    top: -50px !important;
+    left: 55% !important;
+    @media (max-width:768px) {
+        left: 65% !important;
+    }
+    &::after{
+        font-size: 20px !important;
+        color: #fff !important;
+    }
+  }
+  .swiper-button-prev{
+    width: 38px !important;
+    height: 38px !important;
+    background-color: #E2D7BC;
+    border-radius: 50%;
+    top: -50px !important;
+    left: 42% !important;
+    @media (max-width:768px) {
+        left: 32% !important;
+    }
+    &::after{
+        font-size: 20px !important;
+        color: #3F4042 !important;
+    }
+  }
 @font-face {
     font-family: Avenir, sans-serif;
     src: local('Avenir'),
