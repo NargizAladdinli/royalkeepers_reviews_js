@@ -2,6 +2,7 @@
     padding: 30px 0;
     .all-name{
         .line{
+            cursor: pointer;
             padding: 10px 0;
             border-top: 1px solid #E2D7BC;
             .pending{
@@ -21,7 +22,21 @@
                 .close{
                     display: none;
                 }
-                .open{
+                .bur{
+                    display: block !important;
+                    .sistem{
+                        display: inline;
+                        a{
+                            color: #9A231A;
+                            font-size: 14px;
+                            font-weight: 400;
+                            i{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+                .opening{
                     display: block;
                     .sistem{
                         a{
@@ -34,6 +49,9 @@
                         }
                     }
                 }
+                .bir{
+                    display: none !important;
+                }
                 .angle{
                     &::before{
                         content: "\f107";
@@ -42,6 +60,13 @@
                         -webkit-font-smoothing: antialiased;
                     }
                 }
+            }
+            .down{
+                border: 1px solid #B7A259;
+                transition: all 0.3s ease-in-out;
+                height: 0;
+                opacity: 0;
+                visibility: hidden;
             }
             .up{
                 border: 1px solid #B7A259;

@@ -691,6 +691,7 @@
   padding: 30px 0;
 }
 .pending-section .all-name .line {
+  cursor: pointer;
   padding: 10px 0;
   border-top: 1px solid #E2D7BC;
 }
@@ -708,22 +709,46 @@
 .pending-section .all-name .line .pending .close {
   display: none;
 }
-.pending-section .all-name .line .pending .open {
-  display: block;
+.pending-section .all-name .line .pending .bur {
+  display: block !important;
 }
-.pending-section .all-name .line .pending .open .sistem a {
+.pending-section .all-name .line .pending .bur .sistem {
+  display: inline;
+}
+.pending-section .all-name .line .pending .bur .sistem a {
   color: #9A231A;
   font-size: 14px;
   font-weight: 400;
 }
-.pending-section .all-name .line .pending .open .sistem a i {
+.pending-section .all-name .line .pending .bur .sistem a i {
   margin-right: 5px;
+}
+.pending-section .all-name .line .pending .opening {
+  display: block;
+}
+.pending-section .all-name .line .pending .opening .sistem a {
+  color: #9A231A;
+  font-size: 14px;
+  font-weight: 400;
+}
+.pending-section .all-name .line .pending .opening .sistem a i {
+  margin-right: 5px;
+}
+.pending-section .all-name .line .pending .bir {
+  display: none !important;
 }
 .pending-section .all-name .line .pending .angle::before {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+}
+.pending-section .all-name .line .down {
+  border: 1px solid #B7A259;
+  transition: all 0.3s ease-in-out;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 .pending-section .all-name .line .up {
   border: 1px solid #B7A259;
