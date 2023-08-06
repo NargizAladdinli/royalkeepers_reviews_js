@@ -1,14 +1,11 @@
 // read full reviews accordion 
 
-const click = document.querySelector('.click');
-const accordion = document.querySelector(".down");
+const click = document.querySelectorAll('.click');
+const accordion = document.querySelectorAll(".down");
 
-click.addEventListener("click", function(){
-    accordion.classList.toggle("up");
-    click.classList.toggle("open");
-})
-
-
-
-
-
+click.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        accordion[index].classList.toggle('up');
+        item.classList.toggle("open")
+    })
+});

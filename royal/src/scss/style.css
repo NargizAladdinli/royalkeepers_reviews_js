@@ -270,56 +270,6 @@
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
-.repairing_and_servicing .repairing .accordion-down .accordion_bar {
-  padding: 10px 20px;
-}
-.repairing_and_servicing .repairing .accordion-down .accordion_bar .accordion_scroll {
-  height: 100vh;
-  overflow: auto;
-  padding: 0px 30px;
-}
-.repairing_and_servicing .repairing .accordion-down .accordion_bar .accordion_scroll .scroll-txt {
-  padding: 15px 0;
-  border-bottom: 1px solid #B7A259;
-}
-.repairing_and_servicing .repairing .accordion-down .accordion_bar .accordion_scroll .scroll-txt:last-of-type.scroll-txt {
-  border-bottom: none;
-}
-.repairing_and_servicing .repairing .accordion-down .accordion_bar .accordion_scroll .scroll-txt .scroll-title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 35.42px;
-  font-family: Chronicle;
-}
-.repairing_and_servicing .repairing .accordion-down .accordion_bar .accordion_scroll .scroll-txt .scroll-info {
-  margin-top: 20px;
-}
-.repairing_and_servicing .repairing .accordion-down .accordion_bar .accordion_scroll .scroll-txt .scroll-info p {
-  margin-bottom: 10px;
-  font-family: Chronicle;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26.57px;
-}
-.repairing_and_servicing .repairing .accordion-down .accordion_bar .accordion_scroll .scroll-txt .scroll-info span {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 400;
-}
-.repairing_and_servicing .repairing .accordion-down .static-accordion {
-  background: rgba(183, 162, 89, 0.2);
-  padding: 33px 50px;
-}
-.repairing_and_servicing .repairing .accordion-down .static-accordion .static_title {
-  height: 400;
-  font-size: 24px;
-  line-height: 20px;
-}
-.repairing_and_servicing .repairing .accordion-down .static-accordion .static_content {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-}
 .repairing_and_servicing .repairing .up {
   border-top: 1px solid #B7A259;
   transition: all 0.3s ease-in-out;
@@ -334,23 +284,6 @@
   height: 100vh;
   overflow: auto;
   padding: 0px 30px;
-}
-.repairing_and_servicing .repairing .up .accordion_bar .accordion_scroll::-webkit-scrollbar {
-  width: 1px;
-  position: relative;
-  background-color: #9A231A;
-  overflow: visible;
-  display: inline-block;
-}
-.repairing_and_servicing .repairing .up .accordion_bar .accordion_scroll::-webkit-scrollbar-thumb {
-  position: relative;
-}
-.repairing_and_servicing .repairing .up .accordion_bar .accordion_scroll::-webkit-scrollbar-thumb::before {
-  position: absolute;
-  width: 5px;
-  background-color: #B7A259;
-  content: "";
-  inset: 0;
 }
 .repairing_and_servicing .repairing .up .accordion_bar .accordion_scroll .scroll-txt {
   padding: 15px 0;
@@ -424,7 +357,7 @@
   line-height: 16px;
   font-weight: 400;
 }
-.repairing_and_servicing .repairing-mobile .rating-mobile {
+.repairing_and_servicing .repairing-mobile .rating-mobile .stars-mobile {
   padding: 10px 20px;
 }
 .repairing_and_servicing .repairing-mobile .rating-mobile ul {
@@ -435,10 +368,11 @@
   color: #FCE79D;
   font-size: 15px;
 }
-.repairing_and_servicing .repairing-mobile .rating-mobile p {
+.repairing_and_servicing .repairing-mobile .rating-mobile .paragraph {
   font-size: 14px;
   font-weight: 400;
   margin-top: 10px;
+  padding: 10px 20px;
 }
 .repairing_and_servicing .repairing-mobile .rating-mobile .button-read {
   text-align: center;
@@ -450,6 +384,68 @@
   color: #fff;
   text-decoration: none;
   font-size: 12px;
+}
+.repairing_and_servicing .repairing-mobile .accordion-down {
+  border-top: 1px solid #B7A259;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.repairing_and_servicing .repairing-mobile .up {
+  border-top: 1px solid #B7A259;
+  transition: all 0.3s ease-in-out;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar {
+  padding: 10px 20px;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar .accordion_scroll {
+  padding: 0px 0px;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar .accordion_scroll .scroll-txt {
+  padding: 15px 0;
+  border-bottom: 1px solid #B7A259;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar .accordion_scroll .scroll-txt:last-of-type.scroll-txt {
+  border-bottom: none;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar .accordion_scroll .scroll-txt .scroll-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35.42px;
+  font-family: Chronicle;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info {
+  margin-top: 20px;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info p {
+  margin-bottom: 10px;
+  font-family: Chronicle;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.57px;
+}
+.repairing_and_servicing .repairing-mobile .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info span {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.repairing_and_servicing .repairing-mobile .up .static-accordion {
+  background: rgba(183, 162, 89, 0.2);
+  padding: 20px;
+}
+.repairing_and_servicing .repairing-mobile .up .static-accordion .static_title {
+  height: 400;
+  font-size: 24px;
+  line-height: 20px;
+}
+.repairing_and_servicing .repairing-mobile .up .static-accordion .static_content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
 }
 @media (max-width: 576px) {
   .repairing_and_servicing .repairing-mobile {
@@ -689,6 +685,101 @@
 }
 .ratingtotal .total-text .line .line-border {
   border: 0.5px solid #B7A259;
+}
+
+.pending-section {
+  padding: 30px 0;
+}
+.pending-section .all-name .line {
+  padding: 10px 0;
+  border-top: 1px solid #E2D7BC;
+}
+.pending-section .all-name .line .pending .text-pending p {
+  margin-bottom: 0;
+}
+.pending-section .all-name .line .pending ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.pending-section .all-name .line .pending ul li {
+  color: #FCE79D;
+  font-size: 12px;
+}
+.pending-section .all-name .line .pending .close {
+  display: none;
+}
+.pending-section .all-name .line .pending .open {
+  display: block;
+}
+.pending-section .all-name .line .pending .open .sistem a {
+  color: #9A231A;
+  font-size: 14px;
+  font-weight: 400;
+}
+.pending-section .all-name .line .pending .open .sistem a i {
+  margin-right: 5px;
+}
+.pending-section .all-name .line .pending .angle::before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.pending-section .all-name .line .up {
+  border: 1px solid #B7A259;
+  transition: all 0.3s ease-in-out;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  margin: 40px 0;
+}
+.pending-section .all-name .line .up .accordion_bar {
+  padding: 10px 20px;
+}
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll {
+  padding: 0px 30px;
+}
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll .scroll-txt {
+  padding: 15px 0;
+  border-bottom: 1px solid #B7A259;
+}
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll .scroll-txt:last-of-type.scroll-txt {
+  border-bottom: none;
+}
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll .scroll-txt .scroll-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35.42px;
+  font-family: Chronicle;
+}
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info {
+  margin-top: 20px;
+}
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info p {
+  margin-bottom: 10px;
+  font-family: Chronicle;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.57px;
+}
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info span {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.pending-section .all-name .line .up .static-accordion {
+  background: rgba(183, 162, 89, 0.2);
+  padding: 33px 50px;
+}
+.pending-section .all-name .line .up .static-accordion .static_title {
+  height: 400;
+  font-size: 24px;
+  line-height: 20px;
+}
+.pending-section .all-name .line .up .static-accordion .static_content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 * {

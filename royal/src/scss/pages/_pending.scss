@@ -1,0 +1,107 @@
+.pending-section{
+    padding: 30px 0;
+    .all-name{
+        .line{
+            padding: 10px 0;
+            border-top: 1px solid #E2D7BC;
+            .pending{
+                .text-pending{
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+                ul{
+                    margin-bottom: 0;
+                    padding-left: 0;
+                    li{
+                        color:#FCE79D;
+                        font-size: 12px;
+                    }
+                }
+                .close{
+                    display: none;
+                }
+                .open{
+                    display: block;
+                    .sistem{
+                        a{
+                            color: #9A231A;
+                            font-size: 14px;
+                            font-weight: 400;
+                            i{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+                .angle{
+                    &::before{
+                        content: "\f107";
+                        font-family: "Font Awesome 5 Free";
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                    }
+                }
+            }
+            .up{
+                border: 1px solid #B7A259;
+                transition: all 0.3s ease-in-out;
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+                margin: 40px 0;
+                .accordion_bar{
+                    padding: 10px 20px;
+                    .accordion_scroll{
+                        // height: 100vh;
+                        // overflow: auto;
+                        padding: 0px 30px;
+    
+                        .scroll-txt{
+                            &:last-of-type.scroll-txt{
+                                border-bottom: none;
+                            }
+                            padding: 15px 0;
+                            border-bottom: 1px solid #B7A259;
+                            .scroll-title{
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 35.42px;
+                                font-family: Chronicle;
+                            }
+                            .scroll-info{
+                                margin-top: 20px;
+                                p{
+                                    margin-bottom: 10px;
+                                    font-family: Chronicle;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 26.57px;
+                                }
+                                span{
+                                    font-size: 18px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+                .static-accordion{
+                    background: #B7A25933;
+                    padding: 33px 50px;
+                    .static_title{
+                        height: 400;
+                        font-size: 24px;
+                        line-height: 20px;
+                    }
+                    .static_content{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

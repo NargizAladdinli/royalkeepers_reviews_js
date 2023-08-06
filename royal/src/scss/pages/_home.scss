@@ -319,56 +319,6 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease-in-out;
-            .accordion_bar{
-                padding: 10px 20px;
-                .accordion_scroll{
-                    height: 100vh;
-                    overflow: auto;
-                    padding: 0px 30px;
-                    .scroll-txt{
-                        &:last-of-type.scroll-txt{
-                            border-bottom: none;
-                        }
-                        padding: 15px 0;
-                        border-bottom: 1px solid #B7A259;
-                        .scroll-title{
-                            font-weight: 400;
-                            font-size: 24px;
-                            line-height: 35.42px;
-                            font-family: Chronicle;
-                        }
-                        .scroll-info{
-                            margin-top: 20px;
-                            p{
-                                margin-bottom: 10px;
-                                font-family: Chronicle;
-                                font-weight: 400;
-                                font-size: 18px;
-                                line-height: 26.57px;
-                            }
-                            span{
-                                font-size: 18px;
-                                line-height: 20px;
-                                font-weight: 400;
-                            }
-                        }
-                    }
-                }
-            }
-            .static-accordion{
-                background: #B7A25933;
-                padding: 33px 50px;
-                .static_title{
-                    height: 400;
-                    font-size: 24px;
-                    line-height: 20px;
-                }
-                .static_content{
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 20px;
-                }
-            }
         }
         .up{
             border-top: 1px solid #B7A259;
@@ -382,23 +332,6 @@
                     height: 100vh;
                     overflow: auto;
                     padding: 0px 30px;
-                    &::-webkit-scrollbar{
-                        width: 1px;
-                        position: relative;
-                        background-color: #9A231A;
-                        overflow: visible;
-                        display: inline-block;
-                    }
-                    &::-webkit-scrollbar-thumb{
-                        position: relative;
-                        &::before{
-                            position: absolute;
-                            width: 5px;
-                            background-color: #B7A259;
-                            content: "";
-                            inset: 0;
-                        }
-                    }
 
                     .scroll-txt{
                         &:last-of-type.scroll-txt{
@@ -477,7 +410,10 @@
             }
         }
         .rating-mobile{
-            padding: 10px 20px;
+            // padding: 10px 20px;
+            .stars-mobile{
+                padding: 10px 20px;
+            }
             ul{
                 padding-left: 0;
                 margin-bottom: 0;
@@ -486,10 +422,12 @@
                     font-size: 15px;
                 }
             }
-            p{
+            .paragraph{
                 font-size: 14px;
                 font-weight: 400;
                 margin-top: 10px;
+             padding: 10px 20px;
+
             }
             .button-read{
                 text-align: center;
@@ -500,6 +438,69 @@
                     color: #fff;
                     text-decoration: none;
                     font-size: 12px;
+                }
+            }
+        }
+        .accordion-down{
+            border-top: 1px solid #B7A259;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        .up{
+            border-top: 1px solid #B7A259;
+            transition: all 0.3s ease-in-out;
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            .accordion_bar{
+                padding: 10px 20px;
+                .accordion_scroll{
+                    padding: 0px 0px;
+
+                    .scroll-txt{
+                        &:last-of-type.scroll-txt{
+                            border-bottom: none;
+                        }
+                        padding: 15px 0;
+                        border-bottom: 1px solid #B7A259;
+                        .scroll-title{
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 35.42px;
+                            font-family: Chronicle;
+                        }
+                        .scroll-info{
+                            margin-top: 20px;
+                            p{
+                                margin-bottom: 10px;
+                                font-family: Chronicle;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 26.57px;
+                            }
+                            span{
+                                font-size: 18px;
+                                line-height: 20px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+            .static-accordion{
+                background: #B7A25933;
+                padding: 20px;
+                .static_title{
+                    height: 400;
+                    font-size: 24px;
+                    line-height: 20px;
+                }
+                .static_content{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
                 }
             }
         }
