@@ -389,6 +389,28 @@
   margin-top: 10px;
   padding: 10px 20px;
 }
+.repairing_and_servicing .repairing-mobile .rating-mobile .raytings {
+  width: 70%;
+  margin: auto;
+}
+.repairing_and_servicing .repairing-mobile .rating-mobile .raytings .rating-line .line {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #B7A259;
+  height: 4px;
+  margin: auto;
+  position: relative;
+}
+.repairing_and_servicing .repairing-mobile .rating-mobile .raytings .rating-line .line::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  content: "";
+  background-color: #B7A259;
+  height: 4px;
+  width: 80%;
+  border-radius: 10px 0 0 10px;
+}
 .repairing_and_servicing .repairing-mobile .rating-mobile .button-read {
   text-align: center;
   padding: 10px 0;
