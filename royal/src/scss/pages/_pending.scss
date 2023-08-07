@@ -2,7 +2,7 @@
     padding: 30px 0;
     .all-name{
         .line{
-            cursor: pointer;
+            // cursor: pointer;
             padding: 10px 0;
             border-top: 1px solid #E2D7BC;
             .pending{
@@ -53,6 +53,7 @@
                     display: none !important;
                 }
                 .angle{
+                    cursor: pointer;
                     &::before{
                         content: "\f107";
                         font-family: "Font Awesome 5 Free";
@@ -129,4 +130,55 @@
             }
         }
     }
+}
+.modals{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px 0;
+    background-color: #FCFAF5;
+    border: 2px solid #E2D7BC;
+    box-shadow: 2px 5px 8px 0px #00000033;
+    .title{
+        padding: 10px 0;
+        .btn-close{
+            width: 49px;
+            height: 49px;
+            border: 2px solid #00000080;
+            border-radius: 50%;
+        }
+        h4{
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: 400;
+            width: 282px;
+        }
+    }
+    .btnt{
+        padding: 17px 33px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24.59px;
+        color: #fff;
+        border: none;
+    }
+    .cancel{
+        background-color: #E2D7BC;
+    }
+    .delet{
+        background-color: #9A231A;
+    }
+
+}
+.hidden{
+    display: none;
 }

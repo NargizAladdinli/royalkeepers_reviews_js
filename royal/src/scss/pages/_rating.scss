@@ -30,7 +30,6 @@
         }
     }
     .total-rating{
-        margin-top: 20px;
         span{
             font-size: 18px;
             line-height: 24.59px;
@@ -45,8 +44,25 @@
     }
     .total-text{
         .line{
+            .text{
+                margin: 12px 0;
+            }
             .line-border{
-                border: 0.5px solid #B7A259;
+                height: 4px;
+                border: 1px solid #B7A259;
+                border-radius: 10px;
+                position: relative;
+                margin-left: 42px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    background-color: #B7A259;
+                    height: 4px;
+                    border-radius: 10px 0 0 10px;
+                    width: 70%;
+                    left: -1px;
+                    top: -1px;
+                }
             }
         }
     }

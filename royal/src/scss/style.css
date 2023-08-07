@@ -671,9 +671,6 @@
   font-weight: 400;
   line-height: 16px;
 }
-.ratingtotal .total-rating {
-  margin-top: 20px;
-}
 .ratingtotal .total-rating span {
   font-size: 18px;
   line-height: 24.59px;
@@ -683,15 +680,31 @@
   color: #FCE79D;
   font-size: 18px;
 }
+.ratingtotal .total-text .line .text {
+  margin: 12px 0;
+}
 .ratingtotal .total-text .line .line-border {
-  border: 0.5px solid #B7A259;
+  height: 4px;
+  border: 1px solid #B7A259;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 42px;
+}
+.ratingtotal .total-text .line .line-border::before {
+  content: "";
+  position: absolute;
+  background-color: #B7A259;
+  height: 4px;
+  border-radius: 10px 0 0 10px;
+  width: 70%;
+  left: -1px;
+  top: -1px;
 }
 
 .pending-section {
   padding: 30px 0;
 }
 .pending-section .all-name .line {
-  cursor: pointer;
   padding: 10px 0;
   border-top: 1px solid #E2D7BC;
 }
@@ -736,6 +749,9 @@
 }
 .pending-section .all-name .line .pending .bir {
   display: none !important;
+}
+.pending-section .all-name .line .pending .angle {
+  cursor: pointer;
 }
 .pending-section .all-name .line .pending .angle::before {
   content: "\f107";
@@ -805,6 +821,58 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
+}
+
+.modals {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 20px 0;
+  background-color: #FCFAF5;
+  border: 2px solid #E2D7BC;
+  box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.modals .title {
+  padding: 10px 0;
+}
+.modals .title .btn-close {
+  width: 49px;
+  height: 49px;
+  border: 2px solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 50%;
+}
+.modals .title h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.modals .title p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  width: 282px;
+}
+.modals .btnt {
+  padding: 17px 33px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+  color: #fff;
+  border: none;
+}
+.modals .cancel {
+  background-color: #E2D7BC;
+}
+.modals .delet {
+  background-color: #9A231A;
+}
+
+.hidden {
+  display: none;
 }
 
 * {

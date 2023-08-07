@@ -13,7 +13,7 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8">
                     <div class="all-name">
-                        <div class="line click">
+                        <div class="line">
                             <div class="d-flex justify-content-between">
                                 <div class="date">
                                     <span>01/02/2023</span>
@@ -37,8 +37,8 @@
                                             <div class="edit sistem">
                                                 <a href="#"><i class="fa-solid fa-pen"></i>Edit</a>
                                             </div>
-                                            <div class="delet sistem">
-                                                <a href="#"><i class="fa-solid fa-trash"></i>Delet</a>
+                                            <div class="delet sistem btn-open">
+                                                <a class="btn-open" href="#"><i class="fa-solid fa-trash"></i>Delet</a>
                                             </div>
                                         </div>
                                         <div class="reply opening">
@@ -46,7 +46,7 @@
                                                 <a href="#"><i class="fa-regular fa-envelope"></i>Reply</a>
                                             </div>
                                         </div>
-                                        <div class="angle"></div>
+                                        <div class="angle click"></div>
                                     </div>
                                 </div>
                             </div>
@@ -408,6 +408,18 @@
             </div>
         </div>
     </section>
+    <section class="modals">
+        <div class="title">
+           <button class="btn-close"></button>
+           <h4>Are you sure?</h4>
+           <p>Do you really want to delete these project? This process cannot be undone.</p>
+        </div>
+        <div class="button-click">
+            <button class="cancel btnt">Cancel</button>
+            <button class="delet btnt">Deleted</button>
+        </div>
+    </section>
+    <script src="../src/js/module.js"></script>
     <script src="../src/js/main.js"></script>
     <script src="https://kit.fontawesome.com/610cd415f0.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
