@@ -269,6 +269,16 @@
                 }
             }
             .user{
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: -30px;
+                    left: -14px;
+                    background-color: #B7A259;
+                    width: 1px;
+                    height: 40vh;
+                }
                 .img{
                     width: 45px;
                     height: 45px;
@@ -358,6 +368,9 @@
                                 font-size: 18px;
                                 line-height: 20px;
                                 font-weight: 400;
+                            }
+                            .red{
+                                color: #9A231A;
                             }
                         }
                     }

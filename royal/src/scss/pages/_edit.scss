@@ -1,0 +1,89 @@
+.edit{
+    padding: 100px 0;
+    .edits{
+        border: 1px solid #B7A259;
+        .scroll-txt{
+            &:last-of-type.scroll-txt{
+                border-bottom: none;
+            }
+            padding: 20px 30px;
+            border-bottom: 1px solid #B7A259;
+            .scroll-title{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 35.42px;
+                font-family: Chronicle;
+            }
+            .scroll-info{
+                margin-top: 20px;
+                p{
+                    margin-bottom: 10px;
+                    font-family: Chronicle;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26.57px;
+                }
+                span{
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 400;
+                }
+                .red{
+                    color: #9A231A;
+                }
+            }
+        }
+        .questions{
+            padding: 20px 30px;
+            .question-text{
+                font-family: Chronicle;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 400;
+                position: relative;
+                overflow: hidden;
+                margin-top: 15px;
+                textarea{
+                    border: 1px solid #B7A259;
+                    width: 100%;
+                    height: 180px;
+                    padding: 10px 10px;
+                    margin-top: 15px;
+                    resize: none;
+                    background-color: inherit;
+                    font-family: Avenir, sans-serif;
+                    &::placeholder{
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        color: #3F404280;
+                    }
+                }
+                .limit-character{
+                    position: absolute;
+                    bottom: 0;
+                    right: 15px;
+                    font-family: Avenir, sans-serif;
+                }
+            }
+            .submit{
+                margin-top: 30px;
+                button{       
+                    padding: 15px 60px;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #fff;
+                    font-family: Avenir, sans-serif;
+                    margin-right: 20px;
+                }
+                .send{
+                    background: #9A231A;
+                }
+                .cancel{
+                    background-color: #E2D7BC;
+                }
+            }
+        }
+    }
+}

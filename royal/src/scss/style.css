@@ -221,6 +221,18 @@
   font-weight: 400;
   line-height: 20px;
 }
+.repairing_and_servicing .repairing .content .user {
+  position: relative;
+}
+.repairing_and_servicing .repairing .content .user::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -14px;
+  background-color: #B7A259;
+  width: 1px;
+  height: 40vh;
+}
 .repairing_and_servicing .repairing .content .user .img {
   width: 45px;
   height: 45px;
@@ -312,6 +324,9 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
+}
+.repairing_and_servicing .repairing .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info .red {
+  color: #9A231A;
 }
 .repairing_and_servicing .repairing .up .static-accordion {
   background: rgba(183, 162, 89, 0.2);
@@ -808,6 +823,9 @@
   line-height: 20px;
   font-weight: 400;
 }
+.pending-section .all-name .line .up .accordion_bar .accordion_scroll .scroll-txt .scroll-info .red {
+  color: #9A231A;
+}
 .pending-section .all-name .line .up .static-accordion {
   background: rgba(183, 162, 89, 0.2);
   padding: 33px 50px;
@@ -873,6 +891,102 @@
 
 .hidden {
   display: none;
+}
+
+.edit {
+  padding: 100px 0;
+}
+.edit .edits {
+  border: 1px solid #B7A259;
+}
+.edit .edits .scroll-txt {
+  padding: 20px 30px;
+  border-bottom: 1px solid #B7A259;
+}
+.edit .edits .scroll-txt:last-of-type.scroll-txt {
+  border-bottom: none;
+}
+.edit .edits .scroll-txt .scroll-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35.42px;
+  font-family: Chronicle;
+}
+.edit .edits .scroll-txt .scroll-info {
+  margin-top: 20px;
+}
+.edit .edits .scroll-txt .scroll-info p {
+  margin-bottom: 10px;
+  font-family: Chronicle;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.57px;
+}
+.edit .edits .scroll-txt .scroll-info span {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.edit .edits .scroll-txt .scroll-info .red {
+  color: #9A231A;
+}
+.edit .edits .questions {
+  padding: 20px 30px;
+}
+.edit .edits .questions .question-text {
+  font-family: Chronicle;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.edit .edits .questions .question-text textarea {
+  border: 1px solid #B7A259;
+  width: 100%;
+  height: 180px;
+  padding: 10px 10px;
+  margin-top: 15px;
+  resize: none;
+  background-color: inherit;
+  font-family: Avenir, sans-serif;
+}
+.edit .edits .questions .question-text textarea::-moz-placeholder {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(63, 64, 66, 0.5019607843);
+}
+.edit .edits .questions .question-text textarea::placeholder {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(63, 64, 66, 0.5019607843);
+}
+.edit .edits .questions .question-text .limit-character {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  font-family: Avenir, sans-serif;
+}
+.edit .edits .questions .submit {
+  margin-top: 30px;
+}
+.edit .edits .questions .submit button {
+  padding: 15px 60px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  font-family: Avenir, sans-serif;
+  margin-right: 20px;
+}
+.edit .edits .questions .submit .send {
+  background: #9A231A;
+}
+.edit .edits .questions .submit .cancel {
+  background-color: #E2D7BC;
 }
 
 * {
